@@ -1,5 +1,8 @@
 .header {
+    display: flex;
+    align-items: center;
     padding: 0.5rem 1.5rem 0.5rem;
+    height: 7rem;
     background: $main_background-color;
     border-radius: 2.5rem 2.5rem 0px 0px;
 }
@@ -12,8 +15,8 @@
     width: 45rem;
 }
 .header__link {
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
     line-height: $text-line_height;
     letter-spacing: 0.5px;
 
