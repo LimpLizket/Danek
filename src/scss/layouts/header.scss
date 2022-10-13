@@ -16,7 +16,7 @@
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-left: 5rem;
+    margin-left: 7rem;
 }
 
 .header__logo {}
@@ -90,7 +90,19 @@
 @media screen and (max-width: 575px) {
     .header {
         height: max-content;
+        padding: 0.5rem 0.5rem 0.5rem;
     }
 
-    
+    .header__logo_img {
+        width: 7rem;
+    }
+
+    .header__button_help {
+        width: 3rem;
+    }
+
+    .navbar-nav {
+        
+        margin-left: 0rem; /*уточнить*/
+    }
 }
