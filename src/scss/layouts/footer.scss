@@ -32,3 +32,23 @@
     width: 100%;
     
 }
+
+@media screen and (max-width: 575px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__title {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer__socials {
+        justify-content: space-between;
+        width: 13rem;
+    }
+
+    .footer__icons {
+        width: 15%;
+    }
+
+}
