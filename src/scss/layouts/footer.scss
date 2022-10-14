@@ -40,10 +40,11 @@
 @media screen and (max-width: 575px) {
     .footer {
         flex-direction: column;
+        height: 6rem;
     }
 
     .footer__title {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
     }
 
     .footer__socials {
