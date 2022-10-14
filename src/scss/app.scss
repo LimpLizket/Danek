@@ -1,5 +1,8 @@
+@import './layouts/normalize';
+@import './layouts/var';
+@import './layouts/wrap';
+
+
 @import './layouts/header.scss';
-@import './layouts/footer.scss';
-@import './layouts/content.scss';
-@import './pages/home.scss';
-@import './pages/here.scss';
+@import './layouts/footer';
+
