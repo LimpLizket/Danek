@@ -1,6 +1,7 @@
 .Danekapp {
     background: #C2E0F4;
     display: flex;
+    width: 100%;
 }
 
 .Danekapp_title {
@@ -33,7 +34,13 @@
 .Danekapp_article-description-heroes {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    color: #002B48;
 }
+
+.Danekapp_article-description-actions {
+    color: #002B48;
+}
+
 
 .Danekapp_btn {
     width: 13.35rem;
