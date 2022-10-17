@@ -1,0 +1,80 @@
+.Danekapp {
+    background: #C2E0F4;
+    display: flex;
+}
+
+.Danekapp_title {
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.94rem;
+    color: #002B48;
+}
+
+.Danekapp_article {
+    margin: 5rem;
+    width: 36.56rem;
+    height: 23.56rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03rem;
+    color: #002B48;
+}
+
+.Danekapp_article-description {
+    margin-bottom: 5rem;
+}
+
+.Danekapp_article-description-heroes {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.Danekapp_btn {
+    width: 13.35rem;
+    height: 4.375rem;
+    background: rgba(231, 76, 60);
+    border-radius: 2.5rem;
+    color: white;
+    Font: 'Roboto ', sans-serif;
+    font-size: 1.5rem;
+    Line-height: 1.5rem;
+    align-self: Center;
+}
+
+.Danekapp_image {
+    height: 65vh;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .Danekapp {
+        flex-direction: column;
+    }
+
+    .Danekapp_title {
+        font-size: 1.5rem;
+    }
+
+    .Danekapp_article-description {
+        font-size: 1rem;
+    }
+
+
+    .Danekapp_article {
+        width: 80vw;
+        margin-left: 2rem;
+        height: 60vh;
+    }
+
+    .Danekapp_image {
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+}
