@@ -1,0 +1,33 @@
+@import "../../scss/layouts/var.scss";
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .index__content {
+        background-image: url(/Danek/design/images/back.svg);
+    }
+    .index__content__about h2 {
+        color: $minor_color;
+        font-size: $title-big_size;
+        font-weight: $title-big_weight;
+        line-height: $title-big_line-height;
+    }
+    .index__content__products h3 {
+        color: $minor_color;
+        font-size: 3.5rem;
+        font-weight: $title-big_weight;
+        line-height: $title-big_line-height;
+    }
+    p {
+        color: $minor_color;
+        font-size: 1.5rem;
+    }
+    .index__content____about__text_bold {
+        font-weight: $title-big_weight;
+    }
+    .index__content__about>div {
+        flex: 1 1 50%;
+    }
+    .index__content____about__img_logo {
+        flex: 1 1 50%;
+    }
