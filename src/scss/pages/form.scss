@@ -1,0 +1,68 @@
+.form-main {
+    background-color: $main_background-color;
+    padding: 5rem 5rem;
+    height: 800px;
+    font-family: 'Roboto', sans-serif;
+}
+.form-main__title {
+    padding-bottom: 5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #002B48;
+}
+.form-main_requisites {
+    width: 46vw;
+    box-sizing: border-box;
+    padding-right: 5rem;
+    float: left;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 3.1rem;
+    color: #002B48;
+    border: 1px black solid;
+}
+.form-feedbackform {
+    width: 40vw;
+    height: 400px;
+    background-color: #E35B4EE5;
+    display: grid;
+    grid-template-rows: 10% 10% 10% 40% 10%;
+    row-gap: 1rem;
+    justify-content: center;
+    color: #000000CC;
+    border: 1px black solid;
+    }
+.form-feedbackform__title {
+    grid-row: 1/2;
+    align-self: end;
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+}
+.form-feedbackform_email {
+    grid-row: 2/3;
+}
+.form-feedbackform_name {
+    grid-row: 3/4;
+}
+.form-feedbackform_text {
+    grid-row: 4/5;
+}
+.form-feedbackform_button {
+    grid-row: 5/6;
+    justify-self: end;
+    align-self: center;
+    border: none;
+    background: #147DC3;
+    font-weight: 800;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 19px;
+    transition: 0.5s;
+    border-radius: 100px;
+}
