@@ -28,18 +28,18 @@ html {
     font-weight: $title-second_weight;
     line-height: $title-big_line-height;
     color: $main_color;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .about-chigy__subtitle {
-    font-size: 0.9rem;
+    font-size: $text-font-size;
     font-weight: bold;
     color: $main_color;
 }
 
 .about-chigy__text {
     font-weight: $text_font-weight;
-    font-size: 0.9rem;
+    font-size: $text-font-size;
     line-height: $text-line_height;
     color: $main_color;
 }
