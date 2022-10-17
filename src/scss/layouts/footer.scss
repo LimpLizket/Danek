@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 5.5rem;
     background: $main_background-color;
     border-radius: 0px 0px 2.5rem 2.5rem;
-    border-top: 1px solid black;
 }
 
 .footer_color {
@@ -19,6 +19,10 @@
     line-height: $text-line_height;
     letter-spacing: 0.5px;
     color: $main_color;
+}
+
+.footer__title_color {
+    color: $minor_color;
 }
 
 .footer__socials {
