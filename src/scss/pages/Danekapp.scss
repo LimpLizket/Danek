@@ -25,7 +25,6 @@
     line-height: 1.75rem;
     letter-spacing: 0.03rem;
     color: #002B48;
-    text-align: center;
 }
 
 .Danekapp_article-description {
@@ -50,15 +49,15 @@
     border-radius: 2.5rem;
     color: white;
     Font: 'Roboto ', sans-serif;
-    font-size: 1.5rem;
     Line-height: 1.5rem;
-    align-self: Center;
+    margin-left: 5rem;
 }
 
 .Danekapp_image {
     height: 65vh;
     margin-top: 4rem;
     margin-bottom: 5rem;
+    margin-left: 15rem;
 }
 
 @media screen and (max-width: 575px) {
@@ -72,6 +71,7 @@
 
     .Danekapp_article-description {
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
 
@@ -81,8 +81,13 @@
         height: 60vh;
     }
 
+    .Danekapp_btn {
+        margin-left: 3rem;
+    }
+
     .Danekapp_image {
         margin: auto;
         margin-bottom: 5rem;
+        margin-top: 7rem;
     }
 }
