@@ -1,94 +1,92 @@
 .Danekapp {
-    background: #C2E0F4;
     display: flex;
+    justify-content: space-around;
     width: 100%;
+    padding: 5rem 1rem 5rem;
+    background: $main_background-color;
 }
 
-.Danekapp_title {
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 2.94rem;
-    color: #002B48;
+.Danekapp__title {
+    margin: 1rem 0rem 2rem;
+    font-weight: $title-second_weight;
+    font-size: $title-second_size;
+    line-height: $title-big_line-height;
+    color: $main_color;
 }
 
-.Danekapp_article {
-    margin: 5rem;
+.Danekapp__article {
     width: 36.56rem;
-    height: 23.56rem;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-weight: $text_font-weight;
+    font-size: $text-font-size;
+    line-height: $text-line_height;
     letter-spacing: 0.03rem;
-    color: #002B48;
+    color: $main_color;
 }
 
-.Danekapp_article-description {
+.Danekapp__article-description {
     margin-bottom: 5rem;
 }
 
-.Danekapp_article-description-heroes {
+.Danekapp__article-description_heroes {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    color: #002B48;
+    color: $main_color;
 }
 
-.Danekapp_article-description-actions {
-    color: #002B48;
+.Danekapp__article-description_actions {
+    color: $main_color;
 }
 
-
-.Danekapp_btn {
-    width: 13.35rem;
-    height: 4.375rem;
-    background: rgba(231, 76, 60);
-    border-radius: 2.5rem;
-    color: white;
-    margin-left: 5rem;
+.Danekapp__imagebox {
+    width: 25%;
 }
 
-.Danekapp_image {
-    height: 65vh;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    max-width: 30%;
+.Danekapp__image {
+    max-width: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 575px) {
     .Danekapp {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .Danekapp_title {
-        font-size: 1.5rem;
+    .Danekapp__article-description {
+        margin-bottom: 3rem;
+        text-align: justify;
     }
 
-    .Danekapp_article-description {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-    }
-
-
-    .Danekapp_article {
+    .Danekapp__article {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80vw;
-        margin-left: 2rem;
-        height: 60vh;
+        align-items: center;
+        width: 80vw;    
     }
 
-    .Danekapp_btn {
-        margin-left: 3rem;
+    .Danekapp__imagebox {
+        width: 90%;
+        height: 70%;
     }
 
-    .Danekapp_image {
-        margin: auto;
-        margin-bottom: 5rem;
-        margin-top: 7rem;
+    .Danekapp__image {
+        margin: 5rem 0rem 1rem;
     }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .Danekapp__article {
+        width: 48%;
+    }
+
+    .Danekapp__imagebox {
+        width: 40%;
+        margin-top: 3rem;
+    }
+
+    .Danekapp__article-description {
+        margin-bottom: 2rem;
+    }    
 }
