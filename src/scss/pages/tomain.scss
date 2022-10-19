@@ -1,0 +1,162 @@
+@import "../../scss/layouts/var.scss";
+.index__content {
+    background-image: url(/design/images/back.svg);
+}
+// Заголовок "О нашем проекте"
+.index__content__about h2 {
+    color: $minor_color;
+    font-size: $title-big_size;
+    font-weight: $title-big_weight;
+    line-height: $title-big_line-height;
+    padding-bottom: 5%;
+}
+// подзаголовок
+.index__content__about__text_bold {
+    font-size: 2rem;
+    font-weight: $title-big_weight;
+}
+// весь текст
+p {
+    color: $minor_color;
+    font-size: 1.5rem;
+}
+.index__content__about {
+    display: flex;
+    flex-direction: row;
+}
+.index__content__about>div {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 10% 5% 0 5%;
+}
+.index__content__about__img_logo {
+    width: 40vw;
+    margin: 5% 5% 5% 0;
+}
+.index__characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 0 5% 0 5%;
+}
+.index__characters__img_denis:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 5%; right: 65%; bottom: 10%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+.index__characters__img_danaya:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 20%; right: 40%; bottom: 10%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+.index__characters__img_chick:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 50%; right: 20%; bottom: 10%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+.index__characters__img_bek:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 60%; right: 5%; bottom: 10%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+// Заголовок "Наши продукты"
+.index__products h3 {
+    color: $minor_color;
+    font-size: 3.5rem;
+    font-weight: $title-big_weight;
+    line-height: $title-big_line-height;
+    margin: 5% 0 5% 0;
+    text-align: center;
+}
+.index__products>div {
+    display: flex;
+}
+.index__products img {
+    width: 20vw;
+}
+.index__products_app {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    margin: 0 5% 5% 5%;
+}
+.index__products_app img {
+    margin: 0 0 5% 0;
+    filter: saturate(90%);
+    border-radius: 7%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    height: 70%;
+    width: auto;
+}
+.index__products_boardgame {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    margin: 0 5% 5% 0;
+}
+.index__products_boardgame img {
+    margin: 0 0 5% 0;
+}
+.index__products_comic {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    margin: 0 5% 5% 0;
+}
+.index__products_comic img {
+    margin: 0 0 5% 0;
+}
+.index__products a {
+    border: none;
+    border-radius: 10px;
+    background-color: #E74C3CE5;
+    color: white;
+    width: 40%;
+    height: 9%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 3%;
+}
+
+
+
