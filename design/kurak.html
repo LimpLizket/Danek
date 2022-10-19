@@ -22,7 +22,7 @@
     </head>
   </head>
   <body>
-    <header class="header">
+    <header class="header header_color">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="header__logo" href="#">
           <img
@@ -54,7 +54,7 @@
               >Приложение</a
             >
             <a class="header__link nav-link text-dark" href="#chigy">Чигу</a>
-            <a class="header__button header__button_lang" href="#"> RU</a>
+            <a class="header__button header__button_lang header__button_lang_orange" href="#"> RU</a>
           </div>
         </div>
         <a href="#help-form" class="header__button header__button_help">
@@ -66,19 +66,28 @@
         </a>
       </nav>
     </header>
-    <main>
+    <main id="kurak">
+      <div class="container-fluid">
       <section class="kurak"> 
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6">
         <h1 class="kurak__title">Настольная игра «Курак»</h1>
         <p class="kurak__text">
             Цель игры - привлечь интерес  и распространить древнюю культуру лоскутного шитья.
             <p> Немного истории: <br>
                 Это название произошло от кыргызского слова «курак», что в переводе означает «соединять (сшивать) вместе отдельные лоскуты». Этой технике рукоделия насчитывается более 2,5 тысячи лет и присутствует она во многих культурах древних народов.</p>
-           </p>
-           <img class="kurak__image" src="./images/kurak.png" alt="kurak">
-           <a href="https://google.com" class="btn btn-danger btn-lg">Купить</a>
+          </p>
+          <a href="https://google.com" class="kurak__button btn btn-danger btn-lg">Купить</a>
+        </div>
+        <div class="col-6">
+          <img class="kurak__image img-fluid" src="./images/kurak.png" alt="kurak">
+        </div>
+          
+        </div>
       </section>
+    </div>
     </main>
-    <footer class="footer">
+    <footer class="footer footer_color">
       <h3 class="footer__title">Обратная связь:</h3>
       <div class="footer__socials">
         <a

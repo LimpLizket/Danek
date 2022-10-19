@@ -1,8 +1,7 @@
-@import './layouts/normalize';
-@import './layouts/var';
-@import './layouts/wrap';
+@import "./layouts/normalize";
+@import "./layouts/var";
+@import "./layouts/wrap";
+@import "./layouts/header.scss";
+@import "./layouts/footer";
 
-
-@import './layouts/header.scss';
-@import './layouts/footer';
-
+@import "./pages/kurak.scss";
