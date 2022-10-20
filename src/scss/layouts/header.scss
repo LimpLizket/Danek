@@ -20,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 7rem;
 }
 
 .header__logo_img {
@@ -28,7 +27,7 @@
 }
 
 .navbar-nav {
-    width: 80%;
+    width: 90%;
 }
 .header__link {
     font-weight: 500;
@@ -68,6 +67,7 @@
 
 .header__button_lang {
     width: 3.5rem;
+    margin-left: 5rem;
     background: rgba(26, 127, 196, 0.9);
     font-weight: $text_font-weight;
     font-size: 1.13rem;
@@ -94,25 +94,79 @@
 }
 
 @media screen and (max-width: 575px) {
-  .header {
-      height: max-content;
-      padding: 0.5rem 0.3rem 0.5rem;
-  }
+    .header {
+        height: max-content;
+        padding: 0.5rem 0.3rem 0.5rem;
+    }
 
-  .header__logo_img {
-      width: 7rem;
-  }
+    .header__logo_img {
+        width: 7rem;
+        margin-top: 0.5rem;
+    }
 
-  .header__button_help {
-      width: 6rem;
-      margin-top: 1rem;
-  }
+    .header__button_help {
+        width: 6rem;
+        margin-top: 1rem;
+    }
 
-  .navbar-nav {
-      margin-left: 0rem;
-  }
+    .header__button_help {
+        margin: 0;
+    }
 
-  .header__button_help {
-      margin: 0;
-  }
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%!important;
+        justify-content: center;
+        margin-top: 0.3rem;
+    }
+
+    .navbar-nav {
+        margin-right: 0rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        border-radius: 0.7rem!important;
+    }
+
+    .header__button_lang {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 10%!important;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        margin-right: 0rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .header__button_lang {
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        border-radius: 0.7rem!important;
+    }
+
+}
+
+.navbar-container {
+    width: 100%;    
+}
+
+.navbar {
+    flex-wrap: nowrap!important;
+    align-items: flex-start!important;
 }
