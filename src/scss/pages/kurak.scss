@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     text-align: justify;
-    width: 35rem;
+    width: 37rem;
 }
 .kurak__title {
     font-size: $title-second_size;
@@ -25,11 +25,11 @@
 }
 
 .kurak__text {
-  font-weight: $text_font-weight;
-  font-size: $text-font-size;
-  line-height: $text-line_height;
-  color: $main_color;
-  margin-bottom: 3rem;
+    font-weight: $text_font-weight;
+    font-size: $text-font-size;
+    line-height: $text-line_height;
+    color: $main_color;
+    margin-bottom: 3rem;
 }
 
 .kurak__imagebox {
@@ -44,32 +44,28 @@
     border-radius: 1rem;
 }
 
-.kurak__button {
-  align-self: center;
-}
-
 @media screen and (max-width: 575px) {
     .kurak__page {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .kurak__content {
-      width: 80vw;
-      text-align: justify;
-  }
+    .kurak__content {
+        width: 80vw;
+        text-align: justify;
+    }
 
-  .kurak__imagebox {
-      width: 90%;
-      height: 70%;
-  }
+    .kurak__imagebox {
+        width: 90%;
+        height: 70%;
+    }
 
-  .kurak__image {
-      width: 100%;
-      margin: 5rem 0rem 1rem;
-  }
+    .kurak__image {
+        width: 100%;
+        margin: 5rem 0rem 1rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
