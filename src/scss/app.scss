@@ -1,13 +1,13 @@
-@import './layouts/normalize';
-@import './layouts/var';
-@import './layouts/wrap';
+@import "./layouts/normalize";
+@import "./layouts/var";
+@import "./layouts/wrap";
+@import "./layouts/header.scss";
+@import "./layouts/footer";
 
-@import './pages/form.scss';
-@import './layouts/header.scss';
-@import './layouts/footer';
-@import './pages/Danekapp.scss';
+@import "./pages/form.scss";
+@import "./pages/Danekapp.scss";
+@import "./pages/chigy.scss";
+@import "./pages/tomain.scss";
+@import "./layouts/button.scss";
 
-@import './pages/chigy.scss';
-
-@import './pages/tomain.scss';
-@import './layouts/button.scss';
+@import "./pages/kurak.scss";

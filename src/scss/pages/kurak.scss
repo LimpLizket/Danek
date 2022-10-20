@@ -1,0 +1,54 @@
+#kurak {
+  background-color: $main_background-color;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 1rem 5rem;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.9rem;
+}
+.col {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  height: auto;
+}
+.kurak_content {
+  text-align: justify;
+  width: 40rem;
+}
+.kurak__title {
+  align-items: center;
+  font-size: $title-second_size;
+  font-weight: $title-second_weight;
+  line-height: $title-big_line-height;
+  color: $main_color;
+  margin: 1rem 0rem 2rem;
+}
+
+.kurak__text {
+  display: flex;
+  font-weight: $text_font-weight;
+  font-size: $text-font-size;
+  line-height: $text-line_height;
+  color: $main_color;
+  margin-bottom: 3rem;
+  align-items: center;
+  color: #002b48;
+  margin-bottom: 3rem;
+}
+.kurak__imagebox {
+  padding: 1rem;
+}
+.kurak__image {
+  object-fit: cover;
+}
+@media screen and (max-width: 575px) {
+  .kurak__button {
+    align-self: center;
+  }
+}
