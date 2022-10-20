@@ -4,6 +4,7 @@
     width: 100%;
     padding: 5rem 1rem 5rem;
     background: $main_background-color;
+    text-align: justify;
 }
 
 .Danekapp__title {
@@ -15,16 +16,13 @@
 }
 
 .Danekapp__article {
-    width: 36.56rem;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
     font-weight: $text_font-weight;
     font-size: $text-font-size;
     line-height: $text-line_height;
-    letter-spacing: 0.03rem;
     color: $main_color;
-}
-
-.Danekapp__article-description {
-    margin-bottom: 5rem;
 }
 
 .Danekapp__article-description_heroes {
@@ -35,6 +33,7 @@
 
 .Danekapp__article-description_actions {
     color: $main_color;
+    margin-bottom: 3rem;
 }
 
 .Danekapp__imagebox {

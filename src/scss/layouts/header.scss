@@ -20,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 7rem;
 }
 
 .header__logo_img {
@@ -28,14 +27,13 @@
 }
 
 .navbar-nav {
-    width: 80%;
+    width: 90%;
 }
 .header__link {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: $text-line_height;
     letter-spacing: 0.5px;
-
 }
 
 .header__link:hover {
@@ -58,7 +56,7 @@
     width: 7rem;
     padding: 0rem 0.3rem 0rem;
     background: rgba(231, 76, 60, 0.9);
-    
+
     font-weight: $text_font-weight;
     font-size: 1.13rem;
 }
@@ -69,10 +67,11 @@
 
 .header__button_lang {
     width: 3.5rem;
+    margin-left: 5rem;
     background: rgba(26, 127, 196, 0.9);
     font-weight: $text_font-weight;
     font-size: 1.13rem;
-    line-height: $text-line_height;   
+    line-height: $text-line_height;
     text-align: center;
     letter-spacing: 0.07em;
 }
@@ -102,6 +101,7 @@
 
     .header__logo_img {
         width: 7rem;
+        margin-top: 0.5rem;
     }
 
     .header__button_help {
@@ -109,12 +109,64 @@
         margin-top: 1rem;
     }
 
-    .navbar-nav {    
-        margin-left: 0rem;
-    }
-
     .header__button_help {
         margin: 0;
     }
 
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%!important;
+        justify-content: center;
+        margin-top: 0.3rem;
+    }
+
+    .navbar-nav {
+        margin-right: 0rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        border-radius: 0.7rem!important;
+    }
+
+    .header__button_lang {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 10%!important;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        margin-right: 0rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .header__button_lang {
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        border-radius: 0.7rem!important;
+    }
+
+}
+
+.navbar-container {
+    width: 100%;    
+}
+
+.navbar {
+    flex-wrap: nowrap!important;
+    align-items: flex-start!important;
 }

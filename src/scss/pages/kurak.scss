@@ -1,23 +1,22 @@
-.main {
+.kurak {
     background-color: $main_background-color;
     width: 100%;
 }
 
-.chigy__container {
+.kurak__page {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 5rem 1rem 5rem;
 }
 
-.chigy__content {
+.kurak__content {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    width: 40rem;
+    width: 37rem;
 }
-
-.chigy__title {
+.kurak__title {
     font-size: $title-second_size;
     font-weight: $title-second_weight;
     line-height: $title-big_line-height;
@@ -25,14 +24,7 @@
     margin: 1rem 0rem 2rem;
 }
 
-.chigy__subtitle {
-    font-size: $text-font-size;
-    font-weight: bold;
-    color: $main_color;
-    margin-bottom: 3rem;
-}
-
-.chigy__text {
+.kurak__text {
     font-weight: $text_font-weight;
     font-size: $text-font-size;
     line-height: $text-line_height;
@@ -40,66 +32,54 @@
     margin-bottom: 3rem;
 }
 
-.chigy__imagebox {
-    width: 25%;
+.kurak__imagebox {
+    width: 30%;
 }
 
-.chigy__image {
+.kurak__image {
     width: 100%;
     max-width: 100%;
-    height: 90%;
-    border-radius: 1rem;
+    margin-top: 2.5rem;
     object-fit: cover;
+    border-radius: 1rem;
 }
-
-.button {
-    align-self: center;
-}
-
-/*-------------------медиа-запросы---------------------*/
 
 @media screen and (max-width: 575px) {
-    .chigy__container {
+    .kurak__page {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .chigy__content {
+    .kurak__content {
         width: 80vw;
         text-align: justify;
     }
 
-    .button:hover {
-        text-decoration: none;
-        background: rgba(208, 108, 97, 0.9);
-        color: $minor_color;
-    }
-
-    .chigy__imagebox {
+    .kurak__imagebox {
         width: 90%;
         height: 70%;
     }
 
-    .chigy__image {
+    .kurak__image {
         width: 100%;
         margin: 5rem 0rem 1rem;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
-    .chigy__imagebox {
-        width: 40%;
+    .kurak__imagebox {
+        width: 45%;
         margin-top: 3rem;
     }
 
-    .chigy__image {
-        height: 80%;
+    .kurak__image {
+        margin-top: 7rem;
     }
 
-    .chigy__content {
-        width: 48%;
+    .kurak__content {
+        width: 45%;
         display: flex;
         flex-direction: column;
     }
