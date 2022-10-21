@@ -4,7 +4,7 @@
     width: 100%;
     padding: 5rem 1rem 5rem;
     background: $main_background-color;
-    text-align: justify;
+    text-align: left;
 }
 
 .Danekapp__title {
@@ -53,8 +53,7 @@
     }
 
     .Danekapp__article-description {
-        margin-bottom: 3rem;
-        text-align: justify;
+        margin-bottom: 3rem;        
     }
 
     .Danekapp__article {

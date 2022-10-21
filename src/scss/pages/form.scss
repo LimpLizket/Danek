@@ -10,6 +10,10 @@
     text-align: center;
     color: #002B48;
 }
+.form-content {
+    display: flex;
+    justify-content: space-between;
+}
 .form-main_requisites {
     width: 45vw;
     padding-top: 1rem;
@@ -23,7 +27,6 @@
     width: 35vw;
     height: 26rem;
     background-color: #E35B4EE5;
-    float: right;
     display: grid;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
@@ -96,6 +99,9 @@
     .form-main__title {
         padding-bottom: 1.5rem;
     }
+    .form-content {
+        display: unset;
+    }
     .form-main_requisites {
         width: 100%;
         float: none;
@@ -107,6 +113,13 @@
     }
     .form-feedbackform {
         width: 100%;
+        box-sizing: border-box;
         justify-content: normal;
+    }
+}
+@media screen and (max-width: 281px) {
+    .form-feedbackform {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
     }
 }
