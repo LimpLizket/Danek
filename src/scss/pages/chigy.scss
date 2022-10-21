@@ -13,7 +13,7 @@
 .chigy__content {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
     width: 40rem;
 }
 
@@ -68,7 +68,6 @@
 
     .chigy__content {
         width: 80vw;
-        text-align: justify;
     }
 
     .button:hover {

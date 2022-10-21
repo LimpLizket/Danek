@@ -13,7 +13,7 @@
 .kurak__content {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
     width: 37rem;
 }
 .kurak__title {
@@ -54,7 +54,6 @@
 
     .kurak__content {
         width: 80vw;
-        text-align: justify;
     }
 
     .kurak__imagebox {
