@@ -53,12 +53,12 @@
 }
 
 .header__button_help {
-    width: 7rem;
+    width: 10rem;
     padding: 0rem 0.3rem 0rem;
     background: rgba(231, 76, 60, 0.9);
 
     font-weight: $text_font-weight;
-    font-size: 1.13rem;
+    font-size: 1.20rem;
 }
 
 .header__token {
@@ -66,11 +66,11 @@
 }
 
 .header__button_lang {
-    width: 3.5rem;
+    width: 4.5rem;
     margin-left: 5rem;
     background: rgba(26, 127, 196, 0.9);
     font-weight: $text_font-weight;
-    font-size: 1.13rem;
+    font-size: 1.20rem;
     line-height: $text-line_height;
     text-align: center;
     letter-spacing: 0.07em;
