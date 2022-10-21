@@ -50,7 +50,7 @@ p {
 
 .index-characters {
     display: grid;
-    grid-template-columns: repeat(4, 25vw);
+    grid-template-columns: 19vw 1fr 1fr 1fr;
     grid-template-rows: 100%;
     justify-items: center;
     align-items: end;
@@ -111,6 +111,9 @@ p {
     left: 80%;
     right: 5%;
     bottom: 15%;
+    left: 73%;
+    right: 5%;
+    bottom: 15%;
     z-index: 1;
     background: rgba(75, 173, 245, 0.8);
     font-family: Roboto;
@@ -151,12 +154,18 @@ p {
 
 .index-products__images img {
     width: 70%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .index-products__images_app {
     filter: saturate(90%);
     border-radius: 7%;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 2rem;
+}
+
+.index-products__images_comic {
+    border-radius: 2rem;
 }
 
 .index-products__descriptions {
@@ -316,6 +325,11 @@ p {
 
     .index-products_mobile-only img {
         width: 80vw;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .index-products__comic_mobile-only img {
+        border-radius: 2rem;
     }
 
     .index-products_mobile-only a {
