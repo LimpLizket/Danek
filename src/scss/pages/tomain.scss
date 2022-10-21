@@ -1,9 +1,20 @@
 @import "../../scss/layouts/var.scss";
-.index__content {
+.index-content {
     background-image: url(/design/images/back.svg);
 }
+.index-content {
+    display: flex;
+    flex-direction: column;
+}
+.index-content__about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
 // Заголовок "О нашем проекте"
-.index__content__about h2 {
+.index-content__about__headline {
     color: $minor_color;
     font-size: $title-big_size;
     font-weight: $title-big_weight;
@@ -11,7 +22,7 @@
     padding-bottom: 5%;
 }
 // подзаголовок
-.index__content__about__text_bold {
+.index-content__about__text_bold {
     font-size: 2rem;
     font-weight: $title-big_weight;
 }
@@ -20,143 +31,251 @@ p {
     color: $minor_color;
     font-size: 1.5rem;
 }
-.index__content__about {
-    display: flex;
-    flex-direction: row;
+// выравнивание блока с описанием проекта
+.index-content__about>div {
+    margin: 15% 0 0 10%;
 }
-.index__content__about>div {
-    display: inline-flex;
+.index-content__about__img_logo {
+    width: 90%;
+    margin: 15% 10% 5% 5%;
+}
+.index-characters {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: end;
+}
+.index-characters img {
+    width: 100%;
+}
+.index-characters__img_denis:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 5%; right: 75%; bottom: 15%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+.index-characters__img_danaya:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 30%; right: 50%; bottom: 15%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+.index-characters__img_chick:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 55%; right: 25%; bottom: 15%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+.index-characters__img_bek:hover::after { 
+    content: attr(data-title);
+    position: fixed;
+    left: 80%; right: 5%; bottom: 15%;
+    z-index: 1;
+    background: rgba(75, 173, 245, 0.8);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.3em;
+}
+.index-products {
+    display: flex;
     flex-direction: column;
-    width: 40vw;
-    margin: 10% 5% 0 5%;
+    height: 100%;
 }
-.index__content__about__img_logo {
-    width: 40vw;
-    margin: 5% 5% 5% 0;
-}
-.index__characters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin: 0 5% 0 5%;
-}
-.index__characters__img_denis:hover::after { 
-    content: attr(data-title);
-    position: fixed;
-    left: 5%; right: 65%; bottom: 10%;
-    z-index: 1;
-    background: rgba(75, 173, 245, 0.8);
-    font-family: Roboto;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 500;
-    padding: 0.3em;
-}
-.index__characters__img_danaya:hover::after { 
-    content: attr(data-title);
-    position: fixed;
-    left: 20%; right: 40%; bottom: 10%;
-    z-index: 1;
-    background: rgba(75, 173, 245, 0.8);
-    font-family: Roboto;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 500;
-    padding: 0.3em;
-}
-.index__characters__img_chick:hover::after { 
-    content: attr(data-title);
-    position: fixed;
-    left: 50%; right: 20%; bottom: 10%;
-    z-index: 1;
-    background: rgba(75, 173, 245, 0.8);
-    font-family: Roboto;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 500;
-    padding: 0.3em;
-}
-.index__characters__img_bek:hover::after { 
-    content: attr(data-title);
-    position: fixed;
-    left: 60%; right: 5%; bottom: 10%;
-    z-index: 1;
-    background: rgba(75, 173, 245, 0.8);
-    font-family: Roboto;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 500;
-    padding: 0.3em;
+// спрятана мобильная версия продуктового блока
+.index-products_mobile-only {
+    display: none;
 }
 // Заголовок "Наши продукты"
-.index__products h3 {
+.index-products h3 {
     color: $minor_color;
     font-size: 3.5rem;
     font-weight: $title-big_weight;
     line-height: $title-big_line-height;
-    margin: 5% 0 5% 0;
+    margin: 5% 0 10% 0;
     text-align: center;
 }
-.index__products>div {
-    display: flex;
+.index-products__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: end;
 }
-.index__products img {
-    width: 20vw;
+.index-products__images img {
+    width: 70%;
 }
-.index__products_app {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    align-items: center;
-    text-align: center;
-    justify-content: end;
-    margin: 0 5% 5% 5%;
-}
-.index__products_app img {
-    margin: 0 0 5% 0;
+.index-products__images_app {
     filter: saturate(90%);
     border-radius: 7%;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    height: 70%;
-    width: auto;
 }
-.index__products_boardgame {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    align-items: center;
+.index-products__descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: start;
     text-align: center;
-    justify-content: end;
-    margin: 0 5% 5% 0;
+    margin-top: 5%;
 }
-.index__products_boardgame img {
-    margin: 0 0 5% 0;
+.index-products__descriptions p {
+    padding: 5% 10% 5% 10%;
 }
-.index__products_comic {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    align-items: center;
+.index-products__buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: start;
     text-align: center;
-    justify-content: end;
-    margin: 0 5% 5% 0;
+    margin-bottom: 10%;
 }
-.index__products_comic img {
-    margin: 0 0 5% 0;
-}
-.index__products a {
+.index-products__buttons a {
     border: none;
     border-radius: 10px;
     background-color: #E74C3CE5;
     color: white;
-    width: 40%;
-    height: 9%;
+    width: 12rem;
+    height: 4rem;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    padding: 3%;
+    padding: 0.9rem;
 }
-
-
-
+.index-products__buttons a:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    text-decoration: none;
+    color: $main_color;
+}
+// МОБИЛЬНАЯ ВЕРСИЯ
+@media screen and (max-width: 576px) {
+    .index-content__about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .index-content__about>div {
+        margin: 10%;
+    }
+    .index-content__about__img_logo {
+        width: 80%;
+        margin: 10% 10% 5% 10%;
+    }
+    .index-characters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+    }
+    .index-characters__img_denis:hover::after { 
+        content: attr(data-title);
+        position: fixed;
+        left: 15%; right: 15%; bottom: 30%;
+        z-index: 1;
+        background: rgba(75, 173, 245, 0.8);
+        font-family: Roboto;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 500;
+        padding: 0.3em;
+    }
+    .index-characters__img_danaya:hover::after { 
+        content: attr(data-title);
+        position: fixed;
+        left: 15%; right: 15%; bottom: 30%;
+        z-index: 1;
+        background: rgba(75, 173, 245, 0.8);
+        font-family: Roboto;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 500;
+        padding: 0.3em;
+    }
+    .index-characters__img_chick:hover::after { 
+        content: attr(data-title);
+        position: fixed;
+        left: 15%; right: 15%; bottom: 30%;
+        z-index: 1;
+        background: rgba(75, 173, 245, 0.8);
+        font-family: Roboto;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 500;
+        padding: 0.3em;
+    }
+    .index-characters__img_bek:hover::after { 
+        content: attr(data-title);
+        position: fixed;
+        left: 15%; right: 15%; bottom: 30%;
+        z-index: 1;
+        background: rgba(75, 173, 245, 0.8);
+        font-family: Roboto;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 500;
+        padding: 0.3em;
+    }
+    .index-products__images {
+        display: none;
+    }
+    .index-products__descriptions {
+        display: none;
+    }
+    .index-products__buttons {
+        display: none;
+    }
+    .index-products_mobile-only {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    text-align: center;
+    }
+    .index-products_mobile-only div {
+        margin-bottom: 15%;
+    }
+    .index-products_mobile-only p {
+        margin: 10%;
+    }
+    .index-products_mobile-only img {
+        width: 80vw;
+    }
+    .index-products_mobile-only a {
+        border: none;
+        border-radius: 10px;
+        background-color: #E74C3CE5;
+        color: white;
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        padding: 0.9rem;
+        }
+    .index-products_mobile-only a:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        text-decoration: none;
+        color: $main_color;
+    }
+}
