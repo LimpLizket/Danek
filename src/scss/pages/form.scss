@@ -70,9 +70,9 @@
     border-radius: 100px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .form-main {
-        padding: 3rem 3rem;
+        padding: 16rem 3rem 16rem;
     }
     .form-main__title {
         padding-bottom: 3rem;
