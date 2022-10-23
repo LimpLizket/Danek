@@ -5,8 +5,9 @@
 }
 .form-main__title {
     padding-bottom: 5rem;
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: $title-second_size;
+    font-weight: $title-second_weight;
+    line-height: $title-big_line-height;
     text-align: center;
     color: #002B48;
 }
