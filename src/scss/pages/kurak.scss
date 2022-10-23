@@ -1,7 +1,6 @@
 .kurak__main {
   background-color: $main_background-color;
-  width: 100vw;
-  height: 95vh;
+  width: 100%;
 }
 .kurak__page {
   display: flex;
@@ -39,7 +38,7 @@
   object-fit: cover;
   border-radius: 1rem;
 }
-@media all and (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .kurak__main {
     height: auto;
   }
@@ -61,16 +60,11 @@
     margin: 5rem 0rem 1rem;
   }
 }
-@media all and (min-width: 576px) and (max-width: 991px) {
+@media screen and (min-width: 576px) and (max-width: 991px) {
   .kurak__main {
     height: auto;
   }
-  .kurak__page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0rem;
-  }
+
   .kurak__imagebox {
     width: 40%;
     margin-top: 3rem;
@@ -79,20 +73,7 @@
     margin-top: 7rem;
   }
   .kurak__content {
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: fit-content;
-    padding: 5rem 1rem 5rem 0rem;
+    width: 20rem;    
   }
 }
-@media all and (min-width: 576px) and (max-width: 991px) and (min-height: 1160px) {
-  .kurak__main {
-    height: 90vh;
-  }
-}
-@media all and (max-height: 800px) {
-  .kurak__main {
-    height: auto;
-  }
-}
+
